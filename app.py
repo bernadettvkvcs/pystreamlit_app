@@ -51,8 +51,8 @@ def main():
             
             # Térkép megjelenítése
             st.subheader(f"{city} helye a térképen")
+            # Térkép generálása a koordináták alapján
             st.map(pd.DataFrame({'lat': [lat], 'lon': [lon]}))
-        
-# Az alkalmazás futtatása
 
-    main()
+# Az alkalmazás futtatása
+main()
